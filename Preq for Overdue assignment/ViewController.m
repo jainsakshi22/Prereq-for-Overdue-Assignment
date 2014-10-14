@@ -20,6 +20,12 @@
     NSLog(@"%@", self.textView.text);
     self.textView.delegate = self;
     
+    NSMutableArray *myMutableArray = [@[@"hello",@"bye",@22,@40,@"sakshi"] mutableCopy];
+    [myMutableArray insertObject:@"JAIN" atIndex:0];
+    NSLog(@"%@",myMutableArray);
+    
+    [myMutableArray removeObjectAtIndex:2];
+    NSLog(@"%@",myMutableArray);
 }
 
 - (void)didReceiveMemoryWarning {
