@@ -27,6 +27,22 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (IBAction)processDateButtonPressed:(UIButton *)sender
+{
+    NSDate *date = self.datePicker.date;
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy-mm-dd"];
+    
+    NSString *dateFromString  = [formatter stringFromDate:date];
+    NSLog(@"%@",dateFromString);
+    NSLog(@"%@",[NSDate date]);
+    int timeInterval = [date timeIntervalSince1970];
+    NSLog(@"%i",timeInterval);
+    
+}
+
 #pragma mark - UITextView Delegate method
 
 -(BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
@@ -39,5 +55,6 @@
     else
         return YES;
 }
+
 
 @end

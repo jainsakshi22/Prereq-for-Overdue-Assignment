@@ -11,7 +11,9 @@
 @interface ViewController : UIViewController <UITextViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextView *textView;
+@property (strong, nonatomic) IBOutlet UIDatePicker *datePicker;
 
+- (IBAction)processDateButtonPressed:(UIButton *)sender;
 
 
 @end
