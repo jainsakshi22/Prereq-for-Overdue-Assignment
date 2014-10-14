@@ -40,6 +40,7 @@
 		535E160619ED7E3500E15B84 /* Preq for Overdue assignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Preq for Overdue assignmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		535E160B19ED7E3500E15B84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		535E160C19ED7E3500E15B84 /* Preq_for_Overdue_assignmentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Preq_for_Overdue_assignmentTests.m; sourceTree = "<group>"; };
+		535E161619ED7E4D00E15B84 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +64,7 @@
 		535E15E419ED7E3400E15B84 = {
 			isa = PBXGroup;
 			children = (
+				535E161619ED7E4D00E15B84 /* PrefixHeader.pch */,
 				535E15EF19ED7E3400E15B84 /* Preq for Overdue assignment */,
 				535E160919ED7E3500E15B84 /* Preq for Overdue assignmentTests */,
 				535E15EE19ED7E3400E15B84 /* Products */,
@@ -83,9 +85,9 @@
 			children = (
 				535E15F419ED7E3400E15B84 /* AppDelegate.h */,
 				535E15F519ED7E3400E15B84 /* AppDelegate.m */,
+				535E15FA19ED7E3400E15B84 /* Main.storyboard */,
 				535E15F719ED7E3400E15B84 /* ViewController.h */,
 				535E15F819ED7E3400E15B84 /* ViewController.m */,
-				535E15FA19ED7E3400E15B84 /* Main.storyboard */,
 				535E15FD19ED7E3400E15B84 /* Images.xcassets */,
 				535E15FF19ED7E3400E15B84 /* LaunchScreen.xib */,
 				535E15F019ED7E3400E15B84 /* Supporting Files */,
@@ -343,6 +345,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "Preq for Overdue assignment/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +356,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "Preq for Overdue assignment/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
